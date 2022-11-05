@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+
+}
+
+.footer .about .about-link {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.footer .about .about-link h1 {
+    font-size: 24px;
+}
