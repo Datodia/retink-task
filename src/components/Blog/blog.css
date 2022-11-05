@@ -1,0 +1,30 @@
+.blog {
+    width: 253px;
+    height: 289px;
+    margin-bottom: 20px;
+}
+
+.blog img {
+    max-width: 253px;
+    border-radius: 20px;
+}
+
+.blog h1 {
+    font-size: 18px;
+    color: #393939;
+    font-weight: 300;
+    margin-top: 11px;
+}
+
+.blog .line {
+    width: 80px;
+    height: 3px;
+    border-radius: 20px;
+    background-color: #754DE8;
+    font-weight: 300;
+}
+
+.blog p {
+    font-size: 15px;
+    margin-top: 11px;
+}

@@ -1,0 +1,36 @@
+.header {
+    margin-top: 72px;
+    height: 630px;
+}
+
+.header .avatar {
+    position: relative;
+    top: -570px;
+    left: 730px;
+}
+
+.header .titles {
+    margin-top: 72px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-weight: 700;
+}
+
+.header p {
+    margin-top: 25px;
+    width: 619px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.header .titles .title {
+    width: 342px;
+    font-size: 40px;
+    color: #323232;
+}
+
+.header .titles .logo {
+    color: #7E1CFE;
+    font-size: 45px;
+}

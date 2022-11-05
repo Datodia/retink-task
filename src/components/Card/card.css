@@ -1,0 +1,32 @@
+.card {
+    width: 375px;
+    height: 388px;
+    border: 2px solid red;
+    box-shadow: 4px 4px 8px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    text-align: center;
+    word-break: break-word;
+    margin: 20px 10px;
+}
+
+.card:hover {
+    background-color: aqua;
+}
+
+.card img {
+    margin-top: 45px;
+}
+
+.card h1 {
+    font-size: 20px;
+    width: 253px;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.card p {
+    width: 285px;
+    margin: auto;
+    font-size: 15px;
+}

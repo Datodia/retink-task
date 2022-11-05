@@ -1,0 +1,59 @@
+.wrapper h1 {
+    font-size: 24px;
+    margin-top: 30px;
+    color: #7E1CFE;
+    margin-bottom: 30px;
+}
+
+.wrapper .auth {
+    width: 823px;
+    display: flex;
+    gap: 10px;
+}
+
+.wrapper .auth input {
+    border: none;
+    text-align: center;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+::placeholder {
+    color: #7E1CFE;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.wrapper .auth p {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 0;
+    width: 229px;
+}
+
+.wrapper .buttons {
+    display: flex;
+    margin-top: 30px;
+    gap: 80px;
+}
+
+.wrapper .buttons .sing {
+    width: 223px;
+    height: 58px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: #7E1CFE;
+    color: white;
+    font-size: 20px;
+}
+
+.wrapper .buttons .partner {
+    width: 340px;
+    height: 58px;
+    border-radius: 20px;
+    border: 1px solid #7E1CFE;
+    font-size: 20px;
+    text-decoration: underline;
+    color: #0085FF;
+}
