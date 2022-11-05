@@ -48,6 +48,12 @@
     font-size: 20px;
 }
 
+.wrapper .buttons .sing:hover {
+    transform: scale(1.1);
+    transition: all .5s;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
 .wrapper .buttons .partner {
     width: 340px;
     height: 58px;
@@ -56,4 +62,10 @@
     font-size: 20px;
     text-decoration: underline;
     color: #0085FF;
+}
+
+.wrapper .buttons .partner:hover {
+    transform: scale(1.1);
+    transition: all .5s;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
 }

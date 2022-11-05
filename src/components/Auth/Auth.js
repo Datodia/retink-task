@@ -6,6 +6,7 @@ export const Auth = () => {
     console.log(e.target.value)
   }
 
+
   return (
     <div className='wrapper'>
       <h1>Sign Up For The BETA!</h1>
