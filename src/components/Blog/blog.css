@@ -1,7 +1,8 @@
 .blog {
     width: 253px;
-    height: 289px;
+    height: 300px;
     margin-bottom: 20px;
+    border-radius: 20px;
 }
 
 .blog img {
@@ -27,4 +28,17 @@
 .blog p {
     font-size: 15px;
     margin-top: 11px;
+}
+
+.blog:hover .line {
+    width: 240px;
+    transition: 1s;
+}
+
+.blog:hover h1 {
+    font-weight: 600;
+}
+
+.blog:hover p {
+    font-weight: 500;
 }
