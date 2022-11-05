@@ -1,4 +1,5 @@
 import React from 'react'
+import { Auth } from '../Auth/Auth'
 import { Blog } from '../Blog/Blog'
 import { Card } from '../Card/Card'
 import '../Middle/middle.css'
@@ -75,6 +76,18 @@ export const Middle = () => {
                     title={'Social Media Ads'}
                     desc={'Boost sales and awareness with tailor made ads from experts.                    '}
                 />
+            </div>
+            <div className='signUp'>
+                <h1>Sign Up For The BETA to see more</h1>
+                <div className='inputs'>
+                    <input placeholder='Business Name' type='text' />
+                    <input placeholder='Email' type="email" />
+                </div>
+                <div className='btns'>
+                    <button className='not'>Notify Me</button>
+                    <button className='sign'>Sign up as a freelance partner</button>
+                </div>
+
             </div>
         </div >
     )
