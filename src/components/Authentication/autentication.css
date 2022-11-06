@@ -1,6 +1,6 @@
 .authent .auth-div {
     width: 500px;
-    height: 420px;
+    height: 450px;
     position: absolute;
     top: 25%;
     left: 30%;
@@ -130,4 +130,11 @@
     background-color: rgb(248, 57, 57);
     color: white;
     border: none;
+}
+
+.authent .auth-div .error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
 }
