@@ -18,7 +18,7 @@ export const Auth = () => {
       </div>
       <div className='buttons'>
         <button className='sing'>Notify Me</button>
-        <button className='partner'>Sing up as a freelace partner</button>
+        <button className='partner'>Sing up as a freelace partner <div className='line1'></div></button>
       </div>
     </div>
   )
