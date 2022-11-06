@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import '../Authentication/autentication.css'
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from 'firebase/auth'
 import { auth } from '../../firebase-config'
+import Avatar from '@mui/material/Avatar';
 
 export const Authentication = () => {
 
@@ -48,25 +49,41 @@ export const Authentication = () => {
     }
 
     return (
-        <div className='auth'>
-            <button onClick={showClick}>Sing In/Sing Up</button>
-            <h1>{user?.email}</h1>
-            <button onClick={logout}>Log out</button>
+        <div className='authent'>
+            <div className='login-div'>
+                {!user?.email && <button className='singup' onClick={showClick}>Sing In/Sing Up</button>}
+                <div className='loggeduser'>
+                    <Avatar src="/broken-image.jpg" />
+                    <h1 className='user'>{user?.email}</h1>
+                </div>
+                {user?.email && <button className='loggout' onClick={logout}>Log out</button>}
+            </div>
             {popup &&
                 <div className='auth-div'>
                     <div className='register'>
-                        <h1>Register</h1>
-                        <h1>name</h1>
-                        <input type='text' placeholder='Email' ref={registerEmailRef} />
-                        <input type='mail' placeholder='Password' ref={registerPasswordRef} />
+                        <h1 className='title'>Register</h1>
+                        <button className='exit' onClick={showClick}>X</button>
+                        <div className='names'>
+                            <h1>Email</h1>
+                            <h1>Password</h1>
+                        </div>
+                        <div className='inputs'>
+                            <input placeholder='Email' ref={registerEmailRef} />
+                            <input type='password' placeholder='Password' ref={registerPasswordRef} />
+                        </div>
                         <button onClick={() => { register(); showClick(); }}>Create user</button>
                     </div>
                     <div className='login'>
-                        <h1>Login</h1>
-                        <h1>name</h1>
-                        <input type='text' placeholder='Email' ref={loginEmailRef} />
-                        <input type='mail' placeholder='Password' ref={loginPasswordRef} />
-                        <button onClick={() => { login(); showClick() }}>login</button>
+                        <h1 className='title'>Login</h1>
+                        <div className='names'>
+                            <h1>Email</h1>
+                            <h1>Password</h1>
+                        </div>
+                        <div className='inputs'>
+                            <input placeholder='Email' ref={loginEmailRef} />
+                            <input type='password' placeholder='Password' ref={loginPasswordRef} />
+                        </div>
+                        <button onClick={() => { login(); showClick() }}>Log In</button>
                     </div>
                 </div>}
         </div>

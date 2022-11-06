@@ -1,10 +1,133 @@
-.auth .auth-div {
+.authent .auth-div {
     width: 500px;
-    height: 400px;
-    border: 1px solid red;
+    height: 420px;
     position: absolute;
     top: 25%;
     left: 30%;
-    background-color: gray;
+    background-color: rgb(213, 212, 212);
     z-index: 999;
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px 8px gray;
+}
+
+.authent .singup {
+    margin: 0;
+    width: 150px;
+    height: 58px;
+    background-color: #7E1CFE;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+
+.authent .singup:hover {
+    background-color: #1b71e9;
+    transform: scale(1.1);
+    transition: all .5s;
+}
+
+.authent {
+    margin: -40px 0px 30px 330px;
+}
+
+.authent .login-div {
+    display: flex;
+    gap: 20px;
+}
+
+.authent .login-div .loggeduser {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.authent .login-div .loggout {
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ff451b;
+    color: white;
+    font-size: 18px;
+    font-family: 'Poppins';
+}
+
+.authent .login-div .loggout:hover {
+    background-color: #ff0000;
+    transform: scale(1.1);
+    transition: all .5s;
+}
+
+.authent .user {
+    font-size: 18px;
+}
+
+.authent .auth-div .title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.authent .auth-div .names {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.auth-div .inputs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.auth-div input {
+    width: 200px;
+    height: 48px;
+    border-radius: 20px;
+    border: 1px solid #1b71e9;
+    text-align: center;
+    font-size: 17px;
+    outline: none;
+}
+
+.auth-div input:focus {
+    border: 3px solid #1b71e9;
+}
+
+::placeholder {
+    text-align: center;
+    font-size: 15px;
+    color: #1b71e9;
+}
+
+.authent .auth-div h1 {
+    font-size: 28px;
+    color: rgb(7, 35, 53);
+}
+
+.authent .auth-div button {
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 15px;
+    margin-left: 170px;
+    background-color: #1b71e9;
+    color: white;
+    font-size: 15px;
+    font-family: 'Poppins';
+    border: none;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+}
+
+.authent .auth-div button:hover {
+    transform: scale(1.1);
+    transition: all .5s;
+}
+
+.authent .auth-div .register .exit {
+    width: 50px;
+    position: absolute;
+    transform: translate(259px, -51px);
+    background-color: rgb(248, 57, 57);
+    color: white;
+    border: none;
 }
