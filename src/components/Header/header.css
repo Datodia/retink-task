@@ -37,4 +37,5 @@
 .header .titles .logo {
     color: #7E1CFE;
     font-size: 45px;
+    z-index: 1;
 }

@@ -1,0 +1,10 @@
+.auth .auth-div {
+    width: 500px;
+    height: 400px;
+    border: 1px solid red;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    background-color: gray;
+    z-index: 999;
+}

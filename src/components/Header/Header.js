@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import '../Header/header.css'
-import { Auth, Text } from '../Auth/Auth'
-// import logo from '/logo.svg'
+import { Auth } from '../Auth/Auth'
+import { Authentication } from '../Authentication/Authentication'
 
 export const Header = () => {
 
@@ -16,6 +16,7 @@ export const Header = () => {
     return (
         <div className='header'>
             <img className='logoImg' src='/assets/logo.svg' />
+            <Authentication />
             <div className='titles'>
                 <h1 className='title' >Get Advanced AI
                     + Expert Created</h1>
@@ -26,7 +27,7 @@ export const Header = () => {
             </p>
             <Auth />
             <img onMouseMove={mouseOver} style={{ left: (move / 13) + 700, top: (up / 13) - 600 }} className='avatar' src='/assets/avatar.png' />
-        </div>
 
+        </div>
     )
 }
