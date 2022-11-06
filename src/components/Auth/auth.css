@@ -60,12 +60,25 @@
     border-radius: 20px;
     border: 1px solid #7E1CFE;
     font-size: 20px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: #0085FF;
+}
+
+.wrapper .buttons .partner .line1 {
+    width: 0px;
+    height: 1px;
+    background-color: #0085FF;
+    position: relative;
+    left: 5%;
 }
 
 .wrapper .buttons .partner:hover {
     transform: scale(1.1);
     transition: all .5s;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.wrapper .buttons .partner:hover .line1 {
+    width: 300px;
+    transition: all .5s;
 }
