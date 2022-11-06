@@ -9,6 +9,9 @@ export const Authentication = () => {
     const [popup, setPopup] = useState(false)
     const [user, setUser] = useState({})
 
+    const [error, setError] = useState('')
+    const [regError, setRegError] = useState('')
+
 
     useEffect(() => {
         onAuthStateChanged(auth, () => {
@@ -25,8 +28,10 @@ export const Authentication = () => {
         try {
             const user = await createUserWithEmailAndPassword(auth, registerEmailRef.current.value, registerPasswordRef.current.value)
             setUser(user.user)
+            showClick()
         } catch (error) {
             console.log(error.message)
+            setRegError('Enter Valid Email or Password')
         }
     }
 
@@ -34,8 +39,10 @@ export const Authentication = () => {
         try {
             const user = await signInWithEmailAndPassword(auth, loginEmailRef.current.value, loginPasswordRef.current.value)
             setUser(user.user)
+            showClick()
         } catch (error) {
             console.log(error.message)
+            setError('This user does not exist')
         }
     }
 
@@ -71,7 +78,8 @@ export const Authentication = () => {
                             <input placeholder='Email' ref={registerEmailRef} />
                             <input type='password' placeholder='Password' ref={registerPasswordRef} />
                         </div>
-                        <button onClick={() => { register(); showClick(); }}>Create user</button>
+                        <h6 className='error'>{regError}</h6>
+                        <button onClick={register}>Create user</button>
                     </div>
                     <div className='login'>
                         <h1 className='title'>Login</h1>
@@ -83,7 +91,8 @@ export const Authentication = () => {
                             <input placeholder='Email' ref={loginEmailRef} />
                             <input type='password' placeholder='Password' ref={loginPasswordRef} />
                         </div>
-                        <button onClick={() => { login(); showClick() }}>Log In</button>
+                        <h6 className='error'>{error}</h6>
+                        <button onClick={login}>Log In</button>
                     </div>
                 </div>}
         </div>
