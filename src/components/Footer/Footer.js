@@ -24,7 +24,7 @@ export const Footer = () => {
                         <a href='#'><img src='assets/fb.png' /></a>
                         <a href='#'><img src='assets/Twitter.png' /></a>
                         <a href='#'><img src='assets/Instagram.png' /></a>
-                        <a href='#'><img src='assets/Youtube.png' /></a>
+                        <a href='#'><img src='assets/YouTube.png' /></a>
                         <a href='#'><img src='assets/LinkedIn.png' /></a>
                         <a href='#'><img src='assets/Pinterest.png' /></a>
                     </div>
