@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/retink-task/static/css/main.afbd3189.css",
-    "main.js": "/retink-task/static/js/main.7ebbdc72.js",
+    "main.css": "/retink-task/static/css/main.d9db7603.css",
+    "main.js": "/retink-task/static/js/main.b187ea8f.js",
     "static/js/787.efd34dca.chunk.js": "/retink-task/static/js/787.efd34dca.chunk.js",
     "index.html": "/retink-task/index.html",
-    "main.afbd3189.css.map": "/retink-task/static/css/main.afbd3189.css.map",
-    "main.7ebbdc72.js.map": "/retink-task/static/js/main.7ebbdc72.js.map",
+    "main.d9db7603.css.map": "/retink-task/static/css/main.d9db7603.css.map",
+    "main.b187ea8f.js.map": "/retink-task/static/js/main.b187ea8f.js.map",
     "787.efd34dca.chunk.js.map": "/retink-task/static/js/787.efd34dca.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.afbd3189.css",
-    "static/js/main.7ebbdc72.js"
+    "static/css/main.d9db7603.css",
+    "static/js/main.b187ea8f.js"
   ]
 }
