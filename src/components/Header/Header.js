@@ -15,7 +15,7 @@ export const Header = () => {
     const names = ['Logos ', 'Resumes ', 'Newslatters ', 'Ads & More ']
     return (
         <div className='header'>
-            <img className='logoImg' src='/assets/logo.svg' />
+            <img className='logoImg' src='assets/logo.svg' />
             <Authentication />
             <div className='titles'>
                 <h1 className='title' >Get Advanced AI
@@ -26,7 +26,7 @@ export const Header = () => {
                 Boost your sales 10x faster with content customized by our unique partnership of human creativity and AI optimization
             </p>
             <Auth />
-            <img onMouseMove={mouseOver} style={{ left: (move / 13) + 700, top: (up / 13) - 600 }} className='avatar' src='/assets/avatar.png' />
+            <img onMouseMove={mouseOver} style={{ left: (move / 13) + 700, top: (up / 13) - 600 }} className='avatar' src='assets/avatar.png' />
 
         </div>
     )
